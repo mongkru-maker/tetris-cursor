@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.log
+.env
+upload-payload.json
+mcp-push-args.json

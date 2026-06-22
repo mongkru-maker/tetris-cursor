@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테트리스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>테트리스</h1>
+
+    <div class="game-layout">
+      <section class="board-section" aria-label="게임 보드">
+        <div id="game-board" class="board"></div>
+        <div id="game-over" class="game-over" hidden role="status" aria-live="polite">
+          <p class="game-over-title">게임 오버</p>
+          <p class="game-over-text">재시작 버튼을 눌러 다시 플레이하세요.</p>
+        </div>
+      </section>
+
+      <aside class="info-panel">
+        <div class="score-box">
+          <h2>점수</h2>
+          <p id="score" class="score-value">0</p>
+        </div>
+
+        <div class="button-group">
+          <button id="start-btn" type="button">시작</button>
+          <button id="restart-btn" type="button">재시작</button>
+        </div>
+
+        <div class="controls-guide">
+          <h2>조작법</h2>
+          <ul>
+            <li><kbd>←</kbd> (ArrowLeft) : 왼쪽 이동</li>
+            <li><kbd>→</kbd> (ArrowRight) : 오른쪽 이동</li>
+            <li><kbd>↓</kbd> (ArrowDown) : 한 칸 빠르게 내리기</li>
+            <li><kbd>↑</kbd> (ArrowUp) : 회전</li>
+            <li><kbd>Space</kbd> : 즉시 낙하 (Hard Drop)</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
